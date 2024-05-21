@@ -1,50 +1,35 @@
-body {
-  color: lightslategray;
+blockquote {
+  background-color: rgba(0, 0, 0, 0.12);
+  padding: 8px;
+  quotes: "“";
 }
 
-blockquote {
-  background-color: rgba(0, 12, 24, 0.05);
+blockquote::after {
+  content: close-quote;
+}
+
+blockquote::before {
+  content: open-quote;
 }
 
 a {
-  border: 1px dashed red;
+  color: red;
+  text-decoration: none;
 }
 
-em {
+a:hover {
+  color: blue;
+}
+
+a:visited {
+  color: green;
+}
+
+.first::first-letter {
+  float: left;
   color: darkred;
-}
-
-.variant-em {
-  background-color: greenyellow;
-  color: black;
-  font-weight: bold;
-  font-style: inherit;
-}
-
-ul {
-  background-color: unset;
-}
-
-ul li {
+  border: 3px ridge darkgoldenrod;
   padding: 16px;
-}
-
-.link1 a {
-  color: inherit;
-  padding: inherit;
-}
-
-.link2 a {
-  color: initial;
-  padding: 5px;
-}
-
-.link3 a {
-  color: unset;
-  padding: 0;
-}
-
-.content1 {
-  border: 1px solid black;
-  padding: 10px;
+  background-color: gold;
+  margin: 8px;
 }
