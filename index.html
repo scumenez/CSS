@@ -3,44 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Il mio articolo</title>
-    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/1200px-Bitcoin.svg.png"/>
     <link rel="stylesheet" href="style.css"/>
+    <title>Navbar</title>
 </head>
-
 <body>
-<article>
-    <table>
-    <td>
-        <figure>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/1200px-Bitcoin.svg.png"
-                width="200"
-                height="200"
-                srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/1200px-Bitcoin.svg.png 2x"/>
-        </figure>
-        <hr>
-        <h1>Bitcoin Truffa</h1>
-
-        <p>Qui va il testo del tuo articolo. <br>
-            Puoi scrivere paragrafi, inserire immagini,<br>
-            creare elenchi, e tanto altro.</p>
-        <hr>
-        <p>Altri contenuti interessanti possono andare qui.
-            <hr>
-            <p id="p2">Elemento dell'elenco 1</p>
-            <hr>
-            <p id="p2">Elemento dell'elenco 2</p>
-            <hr>
-            <p id="p2">Elemento dell'elenco 3</p>
-            <hr>
-        </p>
-        <p>Continua a scrivere il contenuto del tuo articolo...</p>
-        <footer>
-            <a href="" title="Link1"> Home</a> <a href="" title="Link2"> Link Card</a>
-        </footer>
-    </td>
-    </table>
-</article>
-
+<div class="navbar">
+    <a href="#">Navbar</a>
+    <a href="#">Home</a>
+    <a href="#">Link</a>
+    <div class="dropdown">
+        <div class="dropbtn">Dropdown &#8595
+            <div class="dropdown-content">
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+            </div>
+        </div>
+    </div>
+  <a href="#" disabled>Disabled</a>
+  <div class="search-container">
+    <form action="/search" method="GET">
+      <input type="text" placeholder="Search" name="search">
+      <button type="submit">Search</button>
+    </form>
+  </div>
+</div>
 </body>
 </html>
