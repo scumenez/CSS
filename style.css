@@ -1,50 +1,62 @@
-body {
-  color: lightslategray;
-}
-
-blockquote {
-  background-color: rgba(0, 12, 24, 0.05);
-}
-
-a {
-  border: 1px dashed red;
-}
-
-em {
-  color: darkred;
-}
-
-.variant-em {
-  background-color: greenyellow;
-  color: black;
-  font-weight: bold;
-  font-style: inherit;
-}
-
-ul {
-  background-color: unset;
-}
-
-ul li {
-  padding: 16px;
-}
-
-.link1 a {
-  color: inherit;
-  padding: inherit;
-}
-
-.link2 a {
-  color: initial;
+aside {
+  margin: 0px 0.5%;
   padding: 5px;
-}
-
-.link3 a {
-  color: unset;
-  padding: 0;
-}
-
-.content1 {
   border: 1px solid black;
-  padding: 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: rgb(41, 179, 69);
+  min-width: 200px;
+  min-height: 100%;
+  max-height: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.logo {
+  min-height: 100px;
+  min-width: 200px;
+  padding: 5px;
+  border: 2mm ridge orange;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.links {
+  flex: 10;
+  align-content: center;
+  align-self: stretch;
+  margin-bottom: 33%;
+}
+
+.links li {
+  padding: 15%;
+  text-align: center;
+}
+
+.aside-links {
+  color: #2b2b2b;
+}
+
+.aside-links:hover {
+  color: #2b2bb2;
+  transition: 0.3s;
+}
+
+.user {
+  padding: 5px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  min-height: 170px;
+  min-width: 90px;
+  border: 3mm ridge rgb(175, 15, 151);
+}
+
+.avatar {
+  border: 3mm ridge black;
+  padding: 5px;
 }
