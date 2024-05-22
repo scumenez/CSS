@@ -1,41 +1,138 @@
 body {
-  width: 60em;
-  margin: 0 auto;
-  display: flex;
+  position: relative;
+}
+
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 150px 0 0 -150px;
+  min-height: 350px;
+  min-width: 350px;
+  border: 2px solid white;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #444;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: [header] 10% [buttons] 90%;
+}
+
+#display {
+  grid-row: header;
+  align-self: center;
+  justify-self: end;
+  min-height: 50px;
+}
+
+#display p {
+  color: white;
+  font-size: 35px;
+  padding-top: 15px;
+  padding-right: 10px;
 }
 
 section {
-  padding: 2em;
-  margin: 1em;
+  grid-row: buttons;
+  max-height: 300px;
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: [one] 20% [two] 20% [three] 20% [four] 20% [five] 20%;
 }
 
-#green {
-  background-color: #8ffda7;
+section button {
+  border: 1px ridge #444;
+  background-color: whitesmoke;
+  font-weight: 600;
+  font-size: 25px;
 }
 
-#orange {
-  background-color: #ffc788;
+.op {
+  grid-row: one;
+  background-color: rgba(202, 209, 216);
+  font-size: 20px;
 }
 
-#yellow {
-  background-color: #ffff92;
+#piu {
+  grid-column: 1;
 }
 
-#red {
-  background-color: #ff919c;
+#meno {
+  grid-column: 2;
 }
 
-#blue {
-  background-color: #98d2ff;
+#per {
+  grid-column: 3;
 }
 
-ul {
-  padding: 0;
+#divide {
+  grid-column: 4;
 }
 
-li {
-  background-color: white;
-  padding: 1em;
-  display: block;
-  margin: 1em;
+#seven {
+  grid-column: 1;
+  grid-row: two;
+}
+
+#eight {
+  grid-column: 2;
+  grid-row: two;
+}
+
+#nine {
+  grid-column: 3;
+  grid-row: two;
+}
+
+#four {
+  grid-column: 1;
+  grid-row: three;
+}
+
+#five {
+  grid-column: 2;
+  grid-row: three;
+}
+
+#six {
+  grid-column: 3;
+  grid-row: three;
+}
+
+#one {
+  grid-column: 1;
+  grid-row: four;
+}
+
+#two {
+  grid-column: 2;
+  grid-row: four;
+}
+
+#three {
+  grid-column: 3;
+  grid-row: four;
+}
+
+#zero {
+  grid-column: 1;
+  grid-row: five;
+}
+
+#dot {
+  grid-column: 2;
+  grid-row: five;
+}
+
+#ac {
+  grid-column: 3;
+  grid-row: five;
+}
+
+#equal {
+  grid-column: 4;
+  grid-row: two / six;
+  background-color: rgb(255, 112, 112);
+  font-size: 20px;
 }
